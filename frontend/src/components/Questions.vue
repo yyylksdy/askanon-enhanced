@@ -23,7 +23,12 @@ import Answers from './Answers.vue'
 
 export default {
   name: 'Question',
-  props: ['question'],
+  props: {
+    question: {
+      type: String,
+      required: true
+    }
+  },
   data: () => ({
     visible: false,
     newAnswer: ''
