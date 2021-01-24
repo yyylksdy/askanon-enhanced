@@ -15,9 +15,9 @@ describe('Questions.spec.js', () => {
     describe('Validation', () => {
       const question = createCmp().vm.$options.props.question
 
-      it('question is of type string', () => {
+      it('question is of type Object', () => {
         console.log(question)
-        expect(question.type).toBe(String)
+        expect(question.type).toBe(Object)
       })
 
       it('qustion is required', () => {
